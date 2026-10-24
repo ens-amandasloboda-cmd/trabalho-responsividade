@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background-color: #fcebee;
+    font-family: 'Alice', serif;
+    color: #a24b68;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+.carrinho-subtitulo {
+    font-size: 1.2rem;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cabecalho-logo {
+    width: 5.5rem;
+    height: 5.5rem;
+    object-fit: contain;
+}
+
+.cabecalho-titulo {
+    font-family: "Lora", serif;
+    font-size: 3rem;
+    color: #e06088;
+    font-weight: 500;
+}
+
+.cabecalho-subtitulo {
+    font-family: "Alice", serif;
+    font-size: 1.3rem;
+    color: #e06088;
+    max-width: 21.87rem;
+    text-align: right;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 4rem;
+    padding: 0.8rem 0;
+    margin: 0.5rem 0 2.5rem 0;
+    border-top: 2px solid #d87093;
+    border-bottom: 2px solid #d87093;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #e06088;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.menu-link:hover {
+    color: #7d072c;
+}
+
+.centro {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.centro-imagem {
+    flex: 0 0 40%;
+    width: 40%;
+    max-width: 500px;
+    height: 31.25rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.centro-paragrafo {
+    flex: 1;
+    min-width: 0;
+    background-color: #fbe3e8;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.centro-titulo {
+    font-size: 1.7rem;
+    color: #7d072c;
+}
+
+.centro-texto {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    color: #6d4251;
+}
+
+.cards {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card-valores,
+.card-especializacao,
+.card-horario {
+    width: 100%;
+    min-height: 30rem;
+    padding: 0 1.5rem 2rem;
+    border-radius: 1.25rem;
+    background-color: #f9c1c2;
+    text-align: center;
+}
+
+.card-valores-titulo,
+.card-especializacao-titulo,
+.card-horario-titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.card-valores-imagem,
+.card-especializacao-imagem,
+.card-horario-imagem {
+    width: 15rem;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    border-radius: 2rem;
+}
+
+.card-valores-texto,
+.card-especializacao-texto,
+.card-horario-texto {
+    font-size: 1.2rem;
+    color: #6d4251;
+}
+
+.cards-iniciais,
+.cards-finais {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.carrinho-produto-morango,
+.carrinho-produto-maracuja,
+.carrinho-produto-cenoura,
+.carrinho-produto-framboesa {
+    width: 100%;
+    min-height: 45rem; 
+    height: auto;
+    padding: 1rem 1rem 0;
+    border-radius: 1.25rem;
+    background-color: #fbe3e8;
+    text-align: center;
+}
+
+.carrinho-produto-imagem {
+    width: 30rem;
+    max-width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+
+.morango-texto,
+.maracuja-texto,
+.cenoura-texto,
+.framboesa-texto {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #6d4251;
+}
+
+.carrinho-botao {
+    background-color: #663c2b;
+    border: 2px solid #663c2b;
+    border-radius: 10rem;
+    padding: 0.5rem 2rem;
+    color: #f9c1c2;
+    font-family: 'Alice', serif;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.carrinho-botao:hover {
+    background-color: #a76247;
+    cursor: pointer;
+}
+
+.carrinho-titulo,
+.localizacao-titulo {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.subtitulo,
+.localizacao-subtitulo {
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+    margin: 0.5rem 0 2.5rem 0;
+    border-top: 2px solid #d87093;
+    border-bottom: 2px solid #d87093;
+}
+
+.card-localizacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    background-color: #fbe3e8;
+}
+
+.card-localizacao-imagem {
+    width: 100%;
+    max-width: 33rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.localizacao-texto {
+    font-size: 1.5rem;
+}
+
+.perguntas-iniciais,
+.perguntas-finais {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.perguntas-iniciais details,
+.perguntas-finais details {
+    flex: 1;
+}
+
+.perguntas-texto {
+    max-width: 22rem;
+    color: #663c2b;
+}
+
+.pergunta:hover {
+    cursor: pointer;
+    color: #663c2b;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 3rem;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 2px solid #d87093;
+    border-bottom: 2px solid #d87093;
+}
+
+.rodape-link {
+    text-decoration: none;
+    color: #bd6a86;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.rodape-link:hover {
+    color: #7d072c;
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 1.5rem 2rem;
+    }
+
+    .cabecalho-titulo {
+        font-size: 2.2rem;
+    }
+
+    .cabecalho-subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .centro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .centro-imagem {
+        flex: none;
+        order: 1;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .centro-paragrafo {
+        flex: none;
+        order: 2;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .centro-titulo {
+        font-size: 1.4rem;
+    }
+
+    .centro-texto {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .card-horario {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: 50%;
+    }
+
+    .cards-iniciais,
+    .cards-finais {
+        gap: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+        margin-bottom: 1.5rem;
+    }
+
+    .carrinho-produto-morango,
+    .carrinho-produto-maracuja,
+    .carrinho-produto-cenoura,
+    .carrinho-produto-framboesa {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .carrinho-produto-imagem {
+        height: 18rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card-localizacao {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .card-localizacao-imagem {
+        height: auto;
+    }
+
+    .localizacao-texto {
+        font-size: 1.3rem;
+    }
+    .perguntas-iniciais,
+    .perguntas-finais {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .perguntas-texto {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    .cabecalho {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .cabecalho-logo {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .cabecalho-titulo,.cabecalho-subtitulo{
+        display: none;
+    }
+
+    .menu {
+        gap: 0.5rem 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .menu-link {
+        font-size: 1rem;
+    }
+
+    .centro {
+        margin-top: 1rem;
+    }
+
+    .centro-imagem {
+        max-width: 100%;
+    }
+
+    .centro-paragrafo {
+        padding: 1.2rem;
+        border-radius: 18px;
+    }
+
+    .centro-titulo {
+        font-size: 1.2rem;
+    }
+
+    .centro-texto {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+        gap: 1.2rem;
+    }
+
+    .card-valores,
+    .card-especializacao,
+    .card-horario {
+        min-height: 0;
+        padding-bottom: 1.5rem;
+    }
+
+    .card-horario {
+        max-width: 100%;
+    }
+
+    .card-valores-titulo,
+    .card-especializacao-titulo,
+    .card-horario-titulo {
+        font-size: 1.4rem;
+        margin: 1.2rem 0 1rem 0;
+    }
+
+    .card-valores-imagem,
+    .card-especializacao-imagem,
+    .card-horario-imagem {
+        width: 8rem;
+    }
+
+    .card-valores-texto,
+    .card-especializacao-texto,
+    .card-horario-texto {
+        font-size: 1rem;
+    }
+
+    .carrinho-titulo,
+    .localizacao-titulo {
+        font-size: 1.6rem;
+        margin-top: 2.5rem;
+    }
+
+    .carrinho-subtitulo {
+        font-size: 1rem;
+    }
+
+    .subtitulo,
+    .localizacao-subtitulo {
+        margin-bottom: 1.5rem;
+    }
+
+    .cards-iniciais,
+    .cards-finais {
+        grid-template-columns: 1fr;
+        margin-top: 1.5rem;
+        gap: 1.2rem;
+    }
+
+    .carrinho-produto-morango,
+    .carrinho-produto-maracuja,
+    .carrinho-produto-cenoura,
+    .carrinho-produto-framboesa {
+        padding: 0.8rem 0.8rem 0;
+    }
+
+    .carrinho-produto-imagem {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .morango-titulo,
+    .maracuja-titulo,
+    .cenoura-titulo,
+    .framboesa-titulo {
+        font-size: 1.3rem;
+        margin-top: 0.8rem;
+    }
+
+    .morango-texto,
+    .maracuja-texto,
+    .cenoura-texto,
+    .framboesa-texto {
+        padding-top: 0.8rem;
+        padding-bottom: 1rem;
+    }
+
+    .carrinho-botao {
+        width: 100%;
+        padding: 0.8rem 1rem;
+    }
+
+    .card-localizacao {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .localizacao-texto {
+        font-size: 1.1rem;
+    }
+
+    .pergunta {
+        font-size: 1rem;
+    }
+
+    .rodape {
+        gap: 0.3rem 1.5rem;
+        margin-top: 2rem;
+    }
+}

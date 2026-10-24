@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pétala de Açúcar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section class="cabecalho">
+        <img src="imagens/minha-logo.png" alt="Logo Pétala de Açúcar" class="cabecalho-logo">
+        <h1 class="cabecalho-titulo">Pétala de Açúcar</h1>
+        <h4 class="cabecalho-subtitulo">Doçura que floresce</h4>
+    </section>
+    <nav class="menu">
+        <a href="#" class="menu-link">Home</a>
+        <a href="#" class="menu-link">Menu</a>
+        <a href="#" class="menu-link">Carrinho</a>
+    </nav>
+    <section class="centro">
+        <img src="imagens/bolo.jpg" alt="Fatia de bolo com cobertura de morango" class="centro-imagem">
+        <div class="centro-paragrafo">
+            <h3 class="centro-titulo">Nossa Estreia: Bolo Encantado de Morango</h3>
+            <p class="centro-texto">Prepare-se para se apaixonar pelo nosso Bolo Encanto de Morango, uma verdadeira obra de arte feita para transformar qualquer momento em uma ocasião especial! Com uma aparência delicada, decoração encantadora e um sabor simplesmente inesquecível, esse bolo é a combinação perfeita entre beleza, leveza e doçura.
+Cada fatia revela camadas generosas de massa fofinha e macia, intercaladas com um recheio cremoso e irresistível de morango. O sabor levemente azedinho da fruta fresca se encontra com a suavidade do creme, criando um equilíbrio perfeito que derrete na boca a cada mordida. Para completar essa experiência deliciosa, nosso bolo recebe uma cobertura delicada em tons de rosa, com detalhes decorativos feitos com carinho, transformando cada pedaço em uma pequena celebração.
+            </p>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="card-valores">
+            <h1 class="card-valores-titulo">Nossos valores</h1>
+            <img src="imagens/coracao-rosa.png" alt="" class="card-valores-imagem">
+            <p class="card-valores-texto">Valorizamos o amor, a qualidade e compromisso.</p>
+        </div>
+        <div class="card-especializacao">
+            <h1 class="card-especializacao-titulo">Nossas especialidades</h1>
+            <img src="imagens/cupcakes.png" alt="" class="card-especializacao-imagem">
+            <p class="card-especializacao-texto">De bolos de aniversário a delícias recheadas, temos opções para todos os gostos e ocasiões.</p>
+        </div>
+        <div class="card-horario">
+            <h1 class="card-horario-titulo">Horário de funcionamento</h1>
+            <img src="imagens/horarios.png" alt="" class="card-horario-imagem">
+            <p class="card-horario-texto"><strong>Segunda a sexta:</strong> 09h às 18h30 <br> <strong>Sábados e Domingos:</strong> 08h às 20h30 <br> <strong> Feriados: </strong> 09h às 12h</p>
+        </div>
+    </section>
+    <section class="carrinho">
+        <div class="carrinho-cabecalho">
+            <h1 class="carrinho-titulo">Nossos Bolos</h1>
+            <div class="subtitulo">
+                 <p class="carrinho-subtitulo">Conheça nossas doçuras</p>
+            </div>
+        </div>
+        <section class="cards-iniciais">
+            <div class="carrinho-produto-morango">
+                <img src="imagens/bolo.jpg" alt="" class="carrinho-produto-imagem">
+                <h2 class="morango-titulo">Bolo Encantado de Morango</h2>
+                <p class="morango-texto">Combinação ideal de leveza e sabor</p>
+                <button class="carrinho-botao" id="morango" onclick="verMorango()">Ver informações nutricionais</button>
+                <div id="informacoes-nutricionais-morango">
+
+                </div>
+            </div>
+            <div class="carrinho-produto-maracuja">
+                <img src="imagens/bolo-maracuja.png" alt="" class="carrinho-produto-imagem">
+                <h2 class="maracuja-titulo">Bolo Pedaço de Sol</h2>
+                <p class="maracuja-texto">Explosão de sabor tropical</p>
+                <button class="carrinho-botao" id="maracuja" onclick="verMaracuja()">Ver informações nutricionais</button>
+                <div id="informacoes-nutricionais-maracuja"></div>
+            </div>
+        </section>
+        <section class="cards-finais">
+<div class="carrinho-produto-cenoura">
+                <img src="imagens/bolo-cenoura.png" alt="" class="carrinho-produto-imagem">
+                <h2 class="cenoura-titulo">Bolo Choco-Cenoura</h2>
+                <p class="cenoura-texto">Doce sabor de infância</p>
+                <button class="carrinho-botao" id="cenoura" onclick="verCenoura()">Ver informações nutricionais</button>
+                <div id="informacoes-nutricionais-cenoura"></div>
+            </div>
+            <div class="carrinho-produto-framboesa">
+                <img src="imagens/bolo-framboesa.png" alt="" class="carrinho-produto-imagem">
+                <h2 class="framboesa-titulo">Bolo Poesia de Framboesa</h2>
+                <p class="framboesa-texto">Framboesa & Amor</p>
+                <button class="carrinho-botao" id="framboesa" onclick="verFramboesa()">Ver informações nutricionais</button>
+                <div id="informacoes-nutricionais-framboesa"></div>
+            </div>
+        </section>
+    </section>
+    <section class="localizacao">
+        <h1 class="localizacao-titulo">Onde estamos?</h1>
+        <div class="localizacao-subtitulo">
+            <p class="carrinho-subtitulo">Conheça o lar dos doces</p>
+        </div>
+        <div class="card-localizacao">
+            <img src="imagens/meu-mapa.png" alt="" class="card-localizacao-imagem">
+            <p class="localizacao-texto"><strong>Rua:</strong> Flores de Dezembro <br> <strong>Nº</strong> 33 <br> <strong>Bairro:</strong> Floridas <br> <strong>Cidade: </strong>Porto União - SC</p>
+    </section>
+    <section class="carrinho">
+        <div class="carrinho-cabecalho">
+            <h1 class="carrinho-titulo">Perguntas frequentes</h1>
+            <div class="perguntas-iniciais">
+                <details>
+                    <summary class="pergunta">Vocês trabalham com salgados?</summary>
+                    <p class="perguntas-texto">Não, nossa confeitaria é voltada apenas para doces.</p>
+                </details>
+                    <details>
+                    <summary class="pergunta">Vocês trabalham com encomendas?</summary>
+                    <p class="perguntas-texto">Sim! Realizamos encomendas com no mínimo 02 dias de antecedência.</p>
+                </details>
+                </div>
+                <div class="perguntas-finais">
+                 <details>
+                    <summary class="pergunta">Qual a origem das frutas utilizadas nos doces?</summary>
+                    <p class="perguntas-texto">Nossas frutas são plantadas por nós mesmos, assim são naturais e livres de fertilizantes, proporcionando a melhor experiência para você.</p>
+                </details>
+             <details>
+                    <summary class="pergunta">Vocês fazem entregas em residências?</summary>
+                    <p class="perguntas-texto">Por enquanto não, mas já estamos com um plano para que isso se concretize e a doçura alcance as pessoas de uma forma mais rápida e fácil <3</p>
+                </details>
+                </div>
+        </div>
+    <footer class="rodape">
+        <a href="#" class="rodape-link">Precisa de ajuda?</a>
+        <a href="#" class="rodape-link">Fale conosco</a>
+        <a href="#" class="rodape-link">Instagram</a>
+    </footer>
+</body>
+</html>
